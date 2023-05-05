@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="./title.png" type="image/x-icon">
+
+    <title>Sumanth personal Portfolio</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="navbar" data-aos="fade-down">
+                    <img src="./name.jpeg" class="logo">
+
+                </div>
+
+                <ul id="sidemenu">
+                    <li><a href="#header" class="menu-btn">Home</a></li>
+                    <li><a href="#about" class="menu-btn">About</a></li>
+                    <li><a href="#portfolio" class="menu-btn">Projects</a></li>
+                    <li><a href="#contact" class="menu-btn">contact</a></li>
+                    <li><a href="./Resumeport.pdf" download>Resume</a></li>
+                    <i class="fa-solid fa-xmark" id="icon" onclick="closemenu()" style="color:#a3b86c;"></i>
+                </ul>
+                <i class="fa-solid fa-bars" id="icon" onclick="openmenu()" style="color:#a3b86c;margin: right 20px"></i>
+
+            </nav>
+            <hr style="height:1px;border-width:0;color:#242323;background-color:#242323">
+
+            <div class="header-text" data-aos="fade-left">
+                <p style="color:#a3b86c">FrontEnd Developer | Software Tester</p>
+
+                <h1>
+                    Hello there I'm<br> <span> Sumanth Muktam</span><br>from Anantapur
+                </h1>
+
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about" data-aos="flip-left">
+        <div class="container">
+            <div class="row">
+
+                <div class="about-col-1">
+                    <img src="./dp1-removebg-preview.jpg" alt="img">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <hr style="height:1px;border-width:0;color:#242323;background-color:#242323; margin-bottom: 10px;">
+
+                    <p style="color:rgb(105, 106, 107)">As a web developer, having a well-curated portfolio is crucial
+                        to showcase your skills, experience, and projects to potential clients or employers. Your
+                        portfolio is your online presence, and it serves as a reflection of your abilities and style as
+                        a web developer. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link " onClick="opentab('Skills')">Skills</p>
+                        <!-- <p class="tab-links" onClick="opentab('Projects')">Projects</p> -->
+                        <p class="tab-links" onClick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Web Developement</span><br>Designing web apps and interfaces</li><br>
+                            <li><span>Software Testing</span><br>Knowledege on both <br>Automation and Manual testing
+                            <li><br>
+                            <li><span>Python</span><br>Knowledege on OOPS concepts </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Projects">
+
+                        <ul>
+                            <li><span>Coffee Junkie E-commerce Website</span> <br>Using Html css and js</li>
+                            <li><span>Portfolio</span><br> HTML, Css and Js , Xsl </li>
+                            <li><span> To-Do list</span><br>Using HTML, Css and Js </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents " id="Education">
+                        <ul>
+                            <li><span>2017-2021 Graduation</span><br> Sri Krishnadevaraya University</li>
+                            <li><span> 2015-2017 Board Of Intermediate Education</span><br> Sri Sai Baba National
+                                College </li>
+                            <li> <span> 2014-2015 Board Of Secondary Education</span><br> Sri Sai Vidyanikethan </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- portfolio -->
+    <div id="portfolio" data-aos="zoom-in">
+        <div class="subtitle">
+            <h1 class="sub-about">My Work</h1>
+            <hr style="height:1px;border-width:0;color:#242323;background-color:#242323"><br>
+            <div class="worklist">
+                <div class="work" data-aos="fade-up-right">
+                    <img src="./portfolio.jpg" alt="portfolio website"><br>
+                    <div class="layer">
+                        <h3 style="color:rgb(209, 245, 155)"> Portfolio Website</h3>
+                        <p class="para">The website is about the coffee junkie website</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-link"></i></a>
+
+                    </div>
+
+                </div>
+
+                <div class="work">
+                    <img src="./coffee.jpg" alt="coffee-junkie" data-aos="zoom-in">
+                    <div class="layer">
+                        <h3 style="color:rgb(209, 245, 155)">TVA Bevarages</h3>
+                        <p class="para">The website is about the drinks and their specality</p>
+                        <a href="https://muktam16.github.io/Tva-Bevarages-PRJ/"><i class="fa-sharp fa-solid fa-link"></i></a>
+                    </div>
+
+                </div>
+                <div class="work" >
+                    <img src="./To-do.jpg" alt="To-Do" data-aos="zoom-in">
+                    <div class="layer">
+                        <h3 style="color:rgb(209, 245, 155)">To Do list</h3>
+                        <p class="para">The project is about the list of works items to do</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-link" id="work3"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!----Contanct-->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left" data-aos="fade-right">
+                    <h1 class="sub-title">Contact me</h1>
+                    <hr
+                        style="height:1px;border-width:0;color:#242323;background-color:#242323; margin-bottom: 10px; width:207px ;margin-left:0px">
+                    <p class="mail"><i class='fas fa-paper-plane'></i> Sumanth1391@gmail.com</p>
+                    <p class="mail"><i class='fas fa-phone'></i>
+                        9398808089</p><br>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sumanth-muktam-b52586255?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BzYeBWbKuR1iXX4WKI%2FCQWg%3D%3D"> <i class="fa-brands fa-linkedin-in" id="linked"></i></a>
+                        <a href="https://www.instagram.com/sumant_royal/"> <i class="fa-brands fa-instagram" id="insta"></i></a>
+                        <a href="https://github.com/"> <i class="fa-brands fa-github" id="git"></i></i></a>
+                        <a href="https://twitter.com/"> <i class="fa-brands fa-square-twitter" id="twitter"></i></a>
+                        <a href=""> <i class="fa fa-envelope" aria-hidden="true" id="mail"></i></a>
+
+                </div>
+                </div>
+                <div class="contact-right" data-aos="fade-left">
+
+                    <form name="submit-to-google-sheet">
+                        <h1 class="sub-details" style="color: #a3b86c;">Your Details</h1>
+                        <hr
+                            style="height:1px;border-width:0;color:#242323;background-color:#242323; margin-bottom: 10px;    width: 200px;">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your E-mail" required>
+                        <textarea name="Message" rows="3" placeholder="Your Message"></textarea><br>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form><br><br>
+                    <span id="message"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright" data-aos="slide-up">
+            <p>Copyright &#169; Sumanth. Made with <i class="fa fa-heart" id="hrt"></i></p>
+        </div>
+        </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1400,
+        });
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+
+            sidemenu.style.right = "0"
+        }
+        function closemenu() {
+
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxYv4LplosZY1ZjEhL0oP0G8hA_O6TO0DyEHcof9-IwwvaK2iGpkbjUTvEnIVhTdURjXg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const message = document.getElementById("message")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    message.innerHTML = "Sent successfully!!"
+                    setTimeout(function () {
+                        message.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>

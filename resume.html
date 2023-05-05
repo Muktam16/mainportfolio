@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Document</title>
+
+    <style>
+         #resume-container {
+  position: relative;
+  display: inline-block;
+} */
+body{
+  background-color: black;
+}
+ #resume-icon {
+  cursor: pointer;
+  color:#a3b86c;
+}
+
+#resume-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  text-align: center;
+}
+
+#resume-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  margin-top: 5%;
+}
+
+#download-icon {
+  position: absolute;
+  bottom: 565px;
+  right: 276px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#close-icon {
+  position: absolute;
+    bottom: 607px;
+    right: 35px;
+    margin-right: 270px;
+    top: 54px;
+    color: #fff;
+    text-decoration: none;
+}
+
+    </style>
+</head>
+<body>
+    <div id="resume-container">
+        <div id="resume-icon">
+          <h1>resume</h1>
+        </div>
+        <div id="resume-overlay">
+          <img src="./resimg.png" alt="Resume Image">
+          <a href="./resimg.png" download="resimg.png" id="download-icon">
+            <i class="fas fa-download"></i>
+          </a>
+          <div id="close-icon">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+      </div>
+</body>
+<script>
+document.getElementById("resume-icon").addEventListener("click", function() {
+  document.getElementById("resume-overlay").style.display = "block";
+});
+
+document.getElementById("close-icon").addEventListener("click", function() {
+  document.getElementById("resume-overlay").style.display = "none";
+});
+
+document.getElementById("download-icon").addEventListener("click", function() {
+  // Add download functionality here
+});
+
+</script>
+</html>
